@@ -2,6 +2,6 @@ ELE432 Homework 1
 
 Traffic Light Controller FSM (with Delay) 
 
-Name:            Hakan Töre
+Name: Hakan Töre
 
-Student ID:      2210357024
+Student ID: 2210357024
