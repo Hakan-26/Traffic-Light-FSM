@@ -47,8 +47,10 @@ module tb_Traffic_Light_FSM;
 
 		// Monitor the current state and input signals
 		initial begin
-        $monitor("Time = %0t | clk = %b | reset = %b | TA0RB = %b | led = %b", 
-                 $time, clk, reset, TAORB, led);
+		// synthesis translate_off
+        $monitor("Time = %0t | clk = %b | reset = %b | TA0RB = %b | led = %b | timer=%d | state=%b", 
+                 $time, clk, reset, TAORB, led, uut.Traffic_Light_FSM.timer, uut.Traffic_Light_FSM.state_reg);
+		// synthesis translate_on
 		end
 		
 endmodule
